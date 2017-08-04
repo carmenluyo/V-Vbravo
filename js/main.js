@@ -29,16 +29,30 @@
     });
 
 });
+(function($) {
+  //carousel 
 
- //change color
 
-	$(window).scroll(function(){
-		var prueba = $(this).scrollTop();
-		
-		if (prueba > 120) {
-			$("header").addClass("navegacion");
-		}
-			else if (prueba < 120) {
-			$("header").removeClass("navegacion");
-		}
-	});
+     $("#owl-demo-home").owlCarousel({
+   
+         navigation: true,
+        navigationText: [
+        "<img src='images/atras.png' class='width-arrow'>",
+        "<img src='images/adelante.png' class='width-arrow'>"
+        ],
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem:true,
+        pagination : false
+   
+        // "singleItem:true" is a shortcut for:
+        // items : 1, 
+        // itemsDesktop : false,
+        // itemsDesktopSmall : false,
+        // itemsTablet: false,
+        // itemsMobile : false
+   
+    });
+
+
+})(jQuery);
