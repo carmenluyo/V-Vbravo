@@ -12435,3 +12435,6 @@ table td, table th {
   background-color: rgba(143, 48, 30, 0.74);
   color: #fff;
   margin-bottom: 10px; }
+
+.pt-40 {
+  padding-top: 40px; }
