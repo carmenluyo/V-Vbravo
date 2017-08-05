@@ -12,55 +12,35 @@
 	    <link href="css/owl.carousel.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/home.css">
+		<link rel="stylesheet" type="text/css" href="css/presidencial.css">
 		<link rel="stylesheet"  href="css/lightslider.css"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <style>
-    	ul{
-			list-style: none outside none;
-		    padding-left: 0;
-            margin: 0;
-		}
-        .demo .item{
-            margin-bottom: 60px;
-        }
-		.content-slider li{
-		    background-color: #ed3020;
-		    text-align: center;
-		    color: #FFF;
-		}
-		.content-slider h3 {
-		    margin: 0;
-		    padding: 70px 0;
-		}
-		.demo{
-			width: 800px;
-		}
-    </style>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/lightslider.js"></script> 
-    <script>
-    	 $(document).ready(function() {
-			$("#content-slider").lightSlider({
-                loop:true,
-                keyPress:true
-            });
-            $('#image-gallery').lightSlider({
-                gallery:true,
-                item:1,
-                thumbItem:9,
-                slideMargin: 0,
-                speed:500,
-                auto:true,
-                loop:true,
-                onSliderLoad: function() {
-                    $('#image-gallery').removeClass('cS-hidden');
-                }  
-            });
-		});
-    </script>
-</head>
-<body>
-<div class="tool-bar bg-gray-lighter">
+
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	    <script src="js/lightslider.js"></script> 
+	    <script>
+	    	 $(document).ready(function() {
+				$("#content-slider").lightSlider({
+	                loop:true,
+	                keyPress:true
+	            });
+	            $('#image-gallery').lightSlider({
+	                gallery:true,
+	                item:1,
+	                thumbItem:9,
+	                slideMargin: 0,
+	                speed:500,
+	                auto:true,
+	                loop:true,
+	                onSliderLoad: function() {
+	                    $('#image-gallery').removeClass('cS-hidden');
+	                }  
+	            });
+			});
+	    </script>
+	</head>
+	<body>
+		<div class="tool-bar bg-gray-lighter">
 			<div class="container">
 				<div class="left pv-7">
 					<ul class="list-unstyled">
@@ -145,46 +125,47 @@
 				</div>
 			</div>					
 		</header>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-6">
-				<div class="demo">
-        <div class="item">            
-            <div class="clearfix" style="max-width:474px;">
-                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-                    <li data-thumb="images/bg-edif.png"> 
-                        <img src="images/bg-edif.png" />
-                     </li>
-                    <li data-thumb="images/bg-details.png "> 
-                        <img src="images/bg-details.png" />
-                    </li>
-                    <li data-thumb="images/bg-edif.png "> 
-                        <img src="images/bg-edif.png" />
-                     </li>
-                    <li data-thumb="images/bg-details.png "> 
-                        <img src="images/bg-details.png" />
-                    </li>
-                    <li data-thumb="images/bg-edif.png "> 
-                        <img src="images/bg-edif.png" />
-                     </li>
-                   
-                </ul>
-            </div>
-        </div>
+		<div class="container-fluid">
+		<div class="title">
+			<h2>Edificio Fly</h2>
+		</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="demo">
+				        <div class="item">            
+				            <div class="clearfix">
+				                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+				                    <li data-thumb="images/bg-edif.png"> 
+				                        <img src="images/bg-edif.png" />
+				                     </li>
+				                    <li data-thumb="images/bg-details.png "> 
+				                        <img src="images/bg-details.png" />
+				                    </li>
+				                    <li data-thumb="images/bg-edif.png "> 
+				                        <img src="images/bg-edif.png" />
+				                     </li>
+				                    <li data-thumb="images/bg-details.png "> 
+				                        <img src="images/bg-details.png" />
+				                    </li>
+				                    <li data-thumb="images/bg-edif.png "> 
+				                        <img src="images/bg-edif.png" />
+				                     </li>
+				                </ul>
+				            </div>
+				        </div>
 
-    </div>	
-			</div>
-			<div class="col-md-6">
-				<ul>
-					<li>xd</li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-				
+	    			</div>	
+				</div>
+				<div class="col-md-6">
+					<ul>
+						<li>Año inicio: </li>
+						<li>Área Construida: </li>
+						<li>N° Sótanos: </li>
+						<li>N° Pisos: </li>
+						<li>Dirección: </li>
+						<li>Promotor: </li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
 </body>
